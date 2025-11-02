@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Mini Blog</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #24292e;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Featured Post */
+    .featured {
+      background: #fff;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 900px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .featured img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .featured h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Blog Posts Grid */
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 15px;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 15px;
+    }
+
+    .post-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .post-content p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #24292e;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Mini Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="featured">
+    <img src="https://source.unsplash.com/900x400/?nature,writing" alt="Featured Post">
+    <h2>Featured Post: Finding Inspiration in Everyday Life</h2>
+    <p>
+      Discover how small moments can spark creativity and help you grow as a writer. 
+      Explore ways to turn ordinary experiences into extraordinary stories.
+    </p>
+  </section>
+
+  <section class="posts">
+    <article class="post">
+      <img src="https://source.unsplash.com/400x200/?journal,coffee" alt="Blog Post 1">
+      <div class="post-content">
+        <h3>Morning Routines for Creative Minds</h3>
+        <p>Simple habits to boost your creativity before you start your day.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="https://source.unsplash.com/400x200/?books,study" alt="Blog Post 2">
+      <div class="post-content">
+        <h3>Books That Changed My Perspective</h3>
+        <p>Here’s a list of books that shifted how I see the world and why you should read them.</p>
+      </div>
+    </article>
+
+    <article class="post">
+      <img src="https://source.unsplash.com/400x200/?travel,city" alt="Blog Post 3">
+      <div class="post-content">
+        <h3>Why Traveling Alone Is Life-Changing</h3>
+        <p>Solo travel can teach you more about yourself than any classroom ever could.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <p>© 2025 My Mini Blog | Designed by <a href="#">You</a></p>
+  </footer>
+
+</body>
+</html>
